@@ -1,0 +1,1686 @@
+[
+    {
+        "id": "cff40f27c36bbb6b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a8aedc04ce5afd73",
+        "type": "group",
+        "z": "cff40f27c36bbb6b",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "49917fa6e2ac5014",
+            "1f4adc9bf7539984",
+            "4742caa30d7c707b",
+            "021075adcf618181",
+            "457a77fc563d2ab8",
+            "e914af14abbb6de7",
+            "b3be8685429a316d",
+            "17fe84cee0b2ea0a",
+            "8c5ac139e7eb3e1d",
+            "acd798ba78587b4a",
+            "d27a3d52cc6944b8",
+            "6f7d3369bf3c3c4b",
+            "7910af356cbe024b",
+            "b3bf621def9bc662",
+            "0a41d6167077c3b8",
+            "7f87f21b06e6c2d9",
+            "2e968fda962417d2"
+        ],
+        "x": 14,
+        "y": 39,
+        "w": 1012,
+        "h": 482
+    },
+    {
+        "id": "43c844da6ffc48a1",
+        "type": "group",
+        "z": "cff40f27c36bbb6b",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "b8209e723ada6624",
+            "1ec19d7232b32aea",
+            "1345973e01c05c06",
+            "7a3f0d373cdedd9b",
+            "defd107a50c839bb",
+            "2e35cc20f7925c2a",
+            "35d9f007c54b39dc",
+            "e54c2b7ae632e5f4",
+            "81524edec008cf68",
+            "73b593e9005e2470",
+            "ba994f125b545f91",
+            "1a12afbe3016c699",
+            "4c941ae7083837e1",
+            "72fbc25926eeb794",
+            "9c3143ea63d05e40",
+            "0c97fd511906703c",
+            "60111bc5d49f59af"
+        ],
+        "x": 1054,
+        "y": 59,
+        "w": 1012,
+        "h": 402
+    },
+    {
+        "id": "b435b9ad2fdaf0e9",
+        "type": "group",
+        "z": "cff40f27c36bbb6b",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "413cb8b512853dcf",
+            "ea0acfe64459554c",
+            "fa0ce56ee59ffc6b",
+            "f494bc40fbf39c6f",
+            "157639ef237a2263",
+            "63894ebd8fa19ebf",
+            "58b2676826b0bc8d",
+            "b6d8f63807da4900",
+            "3490e6ed3003ab0e",
+            "197761f20e118304"
+        ],
+        "x": 14,
+        "y": 539,
+        "w": 1032,
+        "h": 262
+    },
+    {
+        "id": "8635593bd9d833b8",
+        "type": "group",
+        "z": "cff40f27c36bbb6b",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "7715e3c4769d5a4a",
+            "125f36cf875147a5",
+            "0a434daba9a8e9a7",
+            "424954bad24fa1bc",
+            "f6a9b2f97c145a5a",
+            "a386de0156a6036b",
+            "bea19bba3d99acc8",
+            "5dd60f10b45f27a5",
+            "17b8594aaa5116c2",
+            "7cf4c25549fb8c8e"
+        ],
+        "x": 1054,
+        "y": 539,
+        "w": 1032,
+        "h": 242
+    },
+    {
+        "id": "49917fa6e2ac5014",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "",
+        "topic": "hospital/patient/heart_rate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "1f4adc9bf7539984",
+                "4742caa30d7c707b"
+            ]
+        ]
+    },
+    {
+        "id": "1f4adc9bf7539984",
+        "type": "ui-gauge",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "Heart Rate",
+        "group": "d44f0a8eb8358439",
+        "order": 5,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Heart_Rate",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "BPM",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "40",
+        "max": "180",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 370,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4742caa30d7c707b",
+        "type": "switch",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "60",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "100",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "021075adcf618181"
+            ],
+            [
+                "8c5ac139e7eb3e1d"
+            ]
+        ]
+    },
+    {
+        "id": "021075adcf618181",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "function 1",
+        "func": "let time = new Date().toLocaleTimeString();\nmsg.payload = \"🚨 LOW HEART RATE: \" + msg.payload + \" BPM | \" + time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 80,
+        "wires": [
+            [
+                "acd798ba78587b4a"
+            ]
+        ]
+    },
+    {
+        "id": "457a77fc563d2ab8",
+        "type": "ui-gauge",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "SpO2",
+        "group": "d44f0a8eb8358439",
+        "order": 4,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "SpO2",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "80",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e914af14abbb6de7",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "",
+        "topic": "hospital/patient/spo2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "457a77fc563d2ab8",
+                "6f7d3369bf3c3c4b"
+            ]
+        ]
+    },
+    {
+        "id": "b3be8685429a316d",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "",
+        "topic": "hospital/patient/body_temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 380,
+        "wires": [
+            [
+                "17fe84cee0b2ea0a",
+                "7f87f21b06e6c2d9"
+            ]
+        ]
+    },
+    {
+        "id": "17fe84cee0b2ea0a",
+        "type": "ui-gauge",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "Body Temperature",
+        "group": "d44f0a8eb8358439",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Body_Temperature",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "34",
+        "max": "41",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 450,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c5ac139e7eb3e1d",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "function 2",
+        "func": "let time = new Date().toLocaleTimeString();\nmsg.payload = \"🚨 HIGH HEART RATE: \" + msg.payload + \" BPM | \" + time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "acd798ba78587b4a"
+            ]
+        ]
+    },
+    {
+        "id": "acd798ba78587b4a",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "Patient Alert Feed",
+        "func": "let alerts = context.get(\"alerts\") || [];\n\nalerts.unshift(msg.payload);\n\n// Keep only the latest 10 alerts\nif (alerts.length > 10) {\n    alerts = alerts.slice(0, 10);\n}\n\ncontext.set(\"alerts\", alerts);\n\nmsg.payload = alerts.join(\"\\n\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 260,
+        "wires": [
+            [
+                "d27a3d52cc6944b8"
+            ]
+        ]
+    },
+    {
+        "id": "d27a3d52cc6944b8",
+        "type": "ui-template",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "group": "d44f0a8eb8358439",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div style=\"padding: 10px;\">\n        <h3>🚨 Patient Alert Feed</h3>\n\n        <div style=\"white-space: pre-line; font-size: 15px;\">\n            {{ msg.payload }}\n        </div>\n    </div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 940,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f7d3369bf3c3c4b",
+        "type": "switch",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "95",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "7910af356cbe024b"
+            ]
+        ]
+    },
+    {
+        "id": "7910af356cbe024b",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "function 3",
+        "func": "let time = new Date().toLocaleTimeString();\nmsg.payload = \"🚨 LOW SpO₂: \" + msg.payload + \" % | \" + time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "acd798ba78587b4a"
+            ]
+        ]
+    },
+    {
+        "id": "b3bf621def9bc662",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "function 4",
+        "func": "let time = new Date().toLocaleTimeString();\nmsg.payload = \"🚨 LOW BODY TEMPERATURE: \" + msg.payload + \" °C | \" + time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "acd798ba78587b4a"
+            ]
+        ]
+    },
+    {
+        "id": "0a41d6167077c3b8",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "function 5",
+        "func": "let time = new Date().toLocaleTimeString();\nmsg.payload = \"🚨 HIGH BODY TEMPERATURE: \" + msg.payload + \" °C | \" + time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 380,
+        "wires": [
+            [
+                "acd798ba78587b4a"
+            ]
+        ]
+    },
+    {
+        "id": "7f87f21b06e6c2d9",
+        "type": "switch",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "36.1",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "37.2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "b3bf621def9bc662"
+            ],
+            [
+                "0a41d6167077c3b8"
+            ]
+        ]
+    },
+    {
+        "id": "b8209e723ada6624",
+        "type": "ui-gauge",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "Room Temperature",
+        "group": "f7a0b2ee16038905",
+        "order": 5,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Room_Temp",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": " C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "15",
+        "max": "35",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1450,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ec19d7232b32aea",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "",
+        "topic": "hospital/facility/room_temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1210,
+        "y": 140,
+        "wires": [
+            [
+                "b8209e723ada6624",
+                "35d9f007c54b39dc"
+            ]
+        ]
+    },
+    {
+        "id": "1345973e01c05c06",
+        "type": "ui-gauge",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "Oxygen level",
+        "group": "f7a0b2ee16038905",
+        "order": 4,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Oxygen Level",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "18",
+        "max": "25",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1430,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a3f0d373cdedd9b",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "",
+        "topic": "hospital/facility/oxygen_level",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1220,
+        "y": 240,
+        "wires": [
+            [
+                "1345973e01c05c06",
+                "1a12afbe3016c699"
+            ]
+        ]
+    },
+    {
+        "id": "defd107a50c839bb",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "",
+        "topic": "hospital/facility/aqi",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1210,
+        "y": 360,
+        "wires": [
+            [
+                "2e35cc20f7925c2a",
+                "0c97fd511906703c"
+            ]
+        ]
+    },
+    {
+        "id": "2e35cc20f7925c2a",
+        "type": "ui-gauge",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "AQI",
+        "group": "f7a0b2ee16038905",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "AQI",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "AQI",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "300",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1430,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35d9f007c54b39dc",
+        "type": "switch",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "20",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "26",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1450,
+        "y": 120,
+        "wires": [
+            [
+                "e54c2b7ae632e5f4"
+            ],
+            [
+                "81524edec008cf68"
+            ]
+        ]
+    },
+    {
+        "id": "e54c2b7ae632e5f4",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "function 6",
+        "func": "let time = new Date().toLocaleTimeString();\nmsg.payload = \"🚨 LOW ROOM TEMPERATURE: \" + msg.payload + \" °C | \" + time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 100,
+        "wires": [
+            [
+                "73b593e9005e2470"
+            ]
+        ]
+    },
+    {
+        "id": "81524edec008cf68",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "function 7",
+        "func": "let time = new Date().toLocaleTimeString();\nmsg.payload = \"🚨 HIGH ROOM TEMPERATURE: \" + msg.payload + \" °C | \" + time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1580,
+        "y": 140,
+        "wires": [
+            [
+                "73b593e9005e2470"
+            ]
+        ]
+    },
+    {
+        "id": "73b593e9005e2470",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "Facility Alert Feed",
+        "func": "let alerts = context.get(\"alerts\") || [];\n\nalerts.unshift(msg.payload);\n\n// Keep only the latest 10 alerts\nif (alerts.length > 10) {\n    alerts = alerts.slice(0, 10);\n}\n\ncontext.set(\"alerts\", alerts);\n\nmsg.payload = alerts.join(\"\\n\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1810,
+        "y": 240,
+        "wires": [
+            [
+                "ba994f125b545f91"
+            ]
+        ]
+    },
+    {
+        "id": "ba994f125b545f91",
+        "type": "ui-template",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "group": "f7a0b2ee16038905",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div style=\"padding: 10px;\">\n        <h3>🚨 Facility Alert Feed</h3>\n\n        <div style=\"white-space: pre-line; font-size: 15px;\">\n            {{ msg.payload }}\n        </div>\n    </div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1980,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a12afbe3016c699",
+        "type": "switch",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "19.5",
+                "vt": "str"
+            },
+            {
+                "t": "gt",
+                "v": "23.5",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1430,
+        "y": 240,
+        "wires": [
+            [
+                "4c941ae7083837e1"
+            ],
+            [
+                "72fbc25926eeb794"
+            ]
+        ]
+    },
+    {
+        "id": "4c941ae7083837e1",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "function 8",
+        "func": "msg.payload = \"🚨 LOW OXYGEN: \" + msg.payload + \" % | \" + new Date().toLocaleTimeString(); return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1580,
+        "y": 220,
+        "wires": [
+            [
+                "73b593e9005e2470"
+            ]
+        ]
+    },
+    {
+        "id": "72fbc25926eeb794",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "function 9",
+        "func": "msg.payload = \"🚨 HIGH OXYGEN: \" + msg.payload + \" % | \" + new Date().toLocaleTimeString(); return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1580,
+        "y": 260,
+        "wires": [
+            [
+                "73b593e9005e2470"
+            ]
+        ]
+    },
+    {
+        "id": "9c3143ea63d05e40",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "function 10",
+        "func": "msg.payload = \"🚨 HIGH AQI: \" + msg.payload + \" | \" + new Date().toLocaleTimeString(); return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 360,
+        "wires": [
+            [
+                "73b593e9005e2470"
+            ]
+        ]
+    },
+    {
+        "id": "0c97fd511906703c",
+        "type": "switch",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "100",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1410,
+        "y": 360,
+        "wires": [
+            [
+                "9c3143ea63d05e40"
+            ]
+        ]
+    },
+    {
+        "id": "413cb8b512853dcf",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "Patient Data Aggregator",
+        "func": "let data = context.get(\"data\") || {\n    heart_rate: [],\n    spo2: [],\n    temperature: []\n};\n\nif (msg.topic.includes(\"heart_rate\")) data.heart_rate.push(Number(msg.payload));\nif (msg.topic.includes(\"spo2\")) data.spo2.push(Number(msg.payload));\nif (msg.topic.includes(\"body_temperature\")) data.temperature.push(Number(msg.payload));\n\nif (msg.topic === \"timer\") {\n    const avg = arr => arr.length ? (arr.reduce((a,b) => a+b, 0) / arr.length).toFixed(1) : \"N/A\";\n\n    msg.topic = \"hospital/summary/patient\";\n    msg.payload = JSON.stringify({\n        heart_rate_avg: avg(data.heart_rate),\n        spo2_avg: avg(data.spo2),\n        temperature_avg: avg(data.temperature)\n    });\n\n    context.set(\"data\", {heart_rate: [], spo2: [], temperature: []});\n    return msg;\n}\n\ncontext.set(\"data\", data);\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 660,
+        "wires": [
+            [
+                "157639ef237a2263"
+            ]
+        ]
+    },
+    {
+        "id": "ea0acfe64459554c",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "",
+        "topic": "hospital/patient/heart_rate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 620,
+        "wires": [
+            [
+                "413cb8b512853dcf"
+            ]
+        ]
+    },
+    {
+        "id": "fa0ce56ee59ffc6b",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "",
+        "topic": "hospital/patient/spo2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 660,
+        "wires": [
+            [
+                "413cb8b512853dcf"
+            ]
+        ]
+    },
+    {
+        "id": "f494bc40fbf39c6f",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "",
+        "topic": "hospital/patient/body_temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 700,
+        "wires": [
+            [
+                "413cb8b512853dcf"
+            ]
+        ]
+    },
+    {
+        "id": "157639ef237a2263",
+        "type": "mqtt out",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "",
+        "topic": "hospital/summary/patient",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5f519d97ce3365df",
+        "x": 910,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "63894ebd8fa19ebf",
+        "type": "inject",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "30",
+        "topic": "timer",
+        "x": 400,
+        "y": 580,
+        "wires": [
+            [
+                "413cb8b512853dcf"
+            ]
+        ]
+    },
+    {
+        "id": "58b2676826b0bc8d",
+        "type": "ui-text",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "group": "d44f0a8eb8358439",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Patient 30 sec Summary",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 730,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "b6d8f63807da4900",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "",
+        "topic": "hospital/summary/patient",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 760,
+        "wires": [
+            [
+                "3490e6ed3003ab0e"
+            ]
+        ]
+    },
+    {
+        "id": "7715e3c4769d5a4a",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "Facility Data Aggregator",
+        "func": "let data = context.get(\"data\") || {\n    room_temperature: [],\n    oxygen_level: [],\n    aqi: []\n};\n\nif (msg.topic.includes(\"room_temperature\"))\n    data.room_temperature.push(Number(msg.payload));\n\nif (msg.topic.includes(\"oxygen_level\"))\n    data.oxygen_level.push(Number(msg.payload));\n\nif (msg.topic.includes(\"aqi\"))\n    data.aqi.push(Number(msg.payload));\n\nif (msg.topic === \"timer\") {\n    const avg = arr => arr.length\n        ? (arr.reduce((a,b) => a+b, 0) / arr.length).toFixed(1)\n        : \"N/A\";\n\n    msg.topic = \"hospital/summary/facility\";\n    msg.payload = JSON.stringify({\n        room_temperature_avg: avg(data.room_temperature),\n        oxygen_level_avg: avg(data.oxygen_level),\n        aqi_avg: avg(data.aqi)\n    });\n\n    context.set(\"data\", {\n        room_temperature: [],\n        oxygen_level: [],\n        aqi: []\n    });\n\n    return msg;\n}\n\ncontext.set(\"data\", data);\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1630,
+        "y": 620,
+        "wires": [
+            [
+                "a386de0156a6036b"
+            ]
+        ]
+    },
+    {
+        "id": "125f36cf875147a5",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "",
+        "topic": "hospital/facility/room_temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1210,
+        "y": 600,
+        "wires": [
+            [
+                "7715e3c4769d5a4a"
+            ]
+        ]
+    },
+    {
+        "id": "0a434daba9a8e9a7",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "",
+        "topic": "hospital/facility/oxygen_level",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1220,
+        "y": 640,
+        "wires": [
+            [
+                "7715e3c4769d5a4a"
+            ]
+        ]
+    },
+    {
+        "id": "424954bad24fa1bc",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "",
+        "topic": "hospital/facility/aqi",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1250,
+        "y": 680,
+        "wires": [
+            [
+                "7715e3c4769d5a4a"
+            ]
+        ]
+    },
+    {
+        "id": "f6a9b2f97c145a5a",
+        "type": "inject",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "30",
+        "topic": "timer",
+        "x": 1440,
+        "y": 580,
+        "wires": [
+            [
+                "7715e3c4769d5a4a"
+            ]
+        ]
+    },
+    {
+        "id": "a386de0156a6036b",
+        "type": "mqtt out",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "",
+        "topic": "hospital/summary/facility",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5f519d97ce3365df",
+        "x": 1930,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3490e6ed3003ab0e",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "function 11",
+        "func": "let d = msg.payload;\n\nmsg.payload =\n\"📊 PATIENT SUMMARY\\n\" +\n\"\\n❤️ Heart Rate: \" + d.heart_rate_avg + \" BPM\\n\" +\n\"\\n🫁 SpO₂: \" + d.spo2_avg + \" %\\n\" +\n\"\\n🌡️ Temperature: \" + d.temperature_avg + \" °C\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 760,
+        "wires": [
+            [
+                "58b2676826b0bc8d"
+            ]
+        ]
+    },
+    {
+        "id": "bea19bba3d99acc8",
+        "type": "function",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "function 12",
+        "func": "let d = msg.payload;\n\nmsg.payload =\n\"📊 FACILITY SUMMARY\\n\" +\n\"\\n🌡️ Room Temperature: \" + d.room_temperature_avg + \" °C\\n\" +\n\"\\n🫧 Oxygen Level: \" + d.oxygen_level_avg + \" %\\n\" +\n\"\\n🌫️ AQI: \" + d.aqi_avg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1530,
+        "y": 740,
+        "wires": [
+            [
+                "17b8594aaa5116c2"
+            ]
+        ]
+    },
+    {
+        "id": "5dd60f10b45f27a5",
+        "type": "mqtt in",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "",
+        "topic": "hospital/summary/facility",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f519d97ce3365df",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1290,
+        "y": 740,
+        "wires": [
+            [
+                "bea19bba3d99acc8"
+            ]
+        ]
+    },
+    {
+        "id": "17b8594aaa5116c2",
+        "type": "ui-text",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "group": "f7a0b2ee16038905",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Facility 30 sec Summary",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1770,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "2e968fda962417d2",
+        "type": "comment",
+        "z": "cff40f27c36bbb6b",
+        "g": "a8aedc04ce5afd73",
+        "name": "Patient Monitoring and ALERTS",
+        "info": "",
+        "x": 830,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "60111bc5d49f59af",
+        "type": "comment",
+        "z": "cff40f27c36bbb6b",
+        "g": "43c844da6ffc48a1",
+        "name": "Facility Monitoring",
+        "info": "",
+        "x": 1850,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "197761f20e118304",
+        "type": "comment",
+        "z": "cff40f27c36bbb6b",
+        "g": "b435b9ad2fdaf0e9",
+        "name": "Patient Summary",
+        "info": "",
+        "x": 840,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7cf4c25549fb8c8e",
+        "type": "comment",
+        "z": "cff40f27c36bbb6b",
+        "g": "8635593bd9d833b8",
+        "name": "Facility Summary",
+        "info": "",
+        "x": 1980,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "5f519d97ce3365df",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d44f0a8eb8358439",
+        "type": "ui-group",
+        "name": "Patient vitals",
+        "page": "25c5a85f1f74ba42",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f7a0b2ee16038905",
+        "type": "ui-group",
+        "name": "Facility Management",
+        "page": "25c5a85f1f74ba42",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "25c5a85f1f74ba42",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "6247dfe0ae2a0f9c",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "b1c9a0647b92ae0a",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6247dfe0ae2a0f9c",
+        "type": "ui-base",
+        "name": "Facility Management",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "b1c9a0647b92ae0a",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d74ce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "9d730c285bea3311",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.31.0"
+        }
+    }
+]
